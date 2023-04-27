@@ -15,6 +15,12 @@ public class Account {
         this.PhoneNumber = PhoneNumber;
     }
 
+     //Deposit function
+    public void DepoistMoney(double DepoistedMoney) {
+        this.Balance += DepoistedMoney;
+        System.out.println("Deposit is Successful!!! Your new balance is " + this.Balance);
+    }
+
     //create setters & getters for each variable
     public String getNumber() {
         return Number;
