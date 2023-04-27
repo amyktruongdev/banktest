@@ -21,6 +21,17 @@ public class Account {
         System.out.println("Deposit is Successful!!! Your new balance is " + this.Balance);
     }
 
+    //Withdraw function
+    public void Withdraw(double WithdrawalMoney) {
+        if(this.Balance - WithdrawalMoney <0) {
+            System.out.println("Withdrawl Unsuccessful, You have insufficient funds. Your balance is " + this.Balance);
+        }
+        else {
+            this.Balance-=WithdrawalMoney;
+            System.out.println("Withdrawl Successful!!! Your new balance is " + this.Balance);
+        }
+    }
+
     //create setters & getters for each variable
     public String getNumber() {
         return Number;
